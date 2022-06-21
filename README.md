@@ -47,7 +47,7 @@
 
 ## HEROKU
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Eximinati/Kurumi-private)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Eximinati/Kurumi-md)
 
 ## Clone this project
 ```bash
@@ -99,4 +99,3 @@ Contributor | Contributor |
 <a href="https://github.com/Death-132"><img src="https://github.com/Death-132.png?size=100" width="100" height="100"></a> | [![Adiwajshing](https://github.com/adiwajshing.png?size=100)](https://github.com/adiwajshing)
 [Death](https://github.com/Death-132)   | [Adiwajshing](https://github.com/adiwajshing)
 Useless worker | Owner Of Baileys |
-   
