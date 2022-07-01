@@ -49,6 +49,12 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Eximinati/Kurumi-md)
 
+```bash
+>After deploying to heroku go to resources click on add ons
+>Search "heroku postgres" and submit order then restart dynos
+>Now click on open app and scan the qr and done enjoy kurumi!
+```
+
 ## Clone this project
 ```bash
 > git clone https://github.com/Eximinati/Kurumi-md
