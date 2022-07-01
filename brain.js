@@ -238,12 +238,66 @@ console.log(err)
 }
 }
 break
+
+
+//"🔰 *General*\n❐ ```profile, rank, exp, delete, help, creator, mods, info, groupinfo```\n\n🏮 *Weeb*\n❐ ```neko, waifu, holo, fox_girl, baka, character, meme, quote, kemonomimi, manga, wallpaper, shinobu, megumin, awoo, marry, divorce, couple, coffee, ppcouple, mysoulmate```\n\n❄️ *Group Commands*\n❐ ```ping, add, kick, promote, demote, group open/close, invite, enable/act disable/deact, antilink, events```\n\n💻 *Economy*\n❐ ```bank, daily, wallet, deposit, withdraw, deck, buy, rob, gamble, shop, leaderboard```\n\n💻 *Utils*\n❐ ```sticker, toimg, togif, tourl, steal, emojimix, google, image```\n\n🎵 *Media*\n❐ ```yts, ytv, yta, lyrics, pinterest```\n\n💦 *NSFW*\n❐ ```spank, blowjob,lick, lesbian, pussy, cum, boobs, hentai-waifu, trap, hneko, ero, ass, hentai, milf, oral, paizuri, ecchi, uniform, maid, marin-kitagawa, oppai, mori-calliope, feet, succubus, school```\n\n"
+
 		   case "h":
 		   case "help":
-		   case 'menu':{ 
-			     arus.sendMessage(m.chat, { text: menu, contextInfo:{"externalAdReply": {"title": `WhatsApp-Botto`,"body": `Kurumi`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": await getBuffer("https://i.pinimg.com/736x/01/bd/31/01bd31fb1b185e38d9f605b0f8f16b90.jpg"),"sourceUrl": "https://kanojo-okarishimasu.fandom.com/wiki/Chizuru_Ichinose"}}}, { quoted: m})
- }
-			   break
+		   case 'menu':
+                const hlp=`
+*♡ Hajimemashite ${pushname}-san, Watashiwa tokisaki kurumi dis*
+                
+ ♥ perfix ♥ :- ${prefix}
+🎋🆁🆄🅻🅴🆂 :-
+●︎ Don't call the bot
+●︎ Don't message the mods for fun
+●︎ If bot is not working then wait for bot to come online
+●︎ Respect bot bcoz you ain't pay for it 
+                
+------{If you break any rule yo will be ban}------
+                
+        *Let the date begin!!!*
+━━━『🔰General🔰』━━━
+profile, rank, exp, delete, help, creator, mods, info, groupinfo
+                
+━━━『🏮Weeb🏮』━━━
+neko, waifu, holo, fox_girl, baka, character, meme, quote, kemonomimi, manga, wallpaper, shinobu, megumin, awoo, marry, divorce, couple, coffee, ppcouple, mysoulmate
+                
+━━『❄️Group Commands❄️』━━
+ping, add, kick, promote, demote, group open/close, invite, enable/act disable/deact, antilink, events
+                
+━━━『💻Economy💻』━━━bank, daily, wallet, deposit, withdraw, deck, buy, rob, gamble, shop, leaderboard
+                
+━━━『💻Utils💻』━━━
+sticker, toimg, togif, tourl, steal, emojimix, google, image
+                
+━━━『🎵Media🎵』━━━
+yts, ytv, yta, lyrics, pinterest
+                
+━━━『💦NSFW💦』━━━
+spank, blowjob,lick, lesbian, pussy, cum, boobs, hentai-waifu, trap, hneko, ero, ass, hentai, milf, oral, paizuri, ecchi, uniform, maid, marin-kitagawa, oppai, mori-calliope, feet, succubus, school
+                
+🍁 *Modified by Aku & Powered by Arus* 🍁`
+                
+                 const AKU = [
+                    {buttonId: '.info', buttonText: {displayText: '📤 Info'}, type: 1},
+                    {buttonId: '.profile', buttonText: {displayText: '🧧 Profile'}, type: 1}
+                    ]
+                    let AKUo = {
+                        file: arus.sendMessage(m.chat,{video:fs.readFileSync('./src/assest/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m}),
+                        caption: hlp,
+                        footer: 'Ari-Ani',
+                        buttons: AKU,
+                        headerType: 4
+                       }
+                break
+		case 'h1':
+"🔰 *General*\n❐ ```profile, rank, exp, delete, help, creator, mods, info, groupinfo```\n\n🏮 *Weeb*\n❐ ```neko, waifu, holo, fox_girl, baka, character, meme, quote, kemonomimi, manga, wallpaper, shinobu, megumin, awoo, marry, divorce, couple, coffee, ppcouple, mysoulmate```\n\n❄️ *Group Commands*\n❐ ```ping, add, kick, promote, demote, group open/close, invite, enable/act disable/deact, antilink, events```\n\n💻 *Economy*\n❐ ```bank, daily, wallet, deposit, withdraw, deck, buy, rob, gamble, shop, leaderboard```\n\n💻 *Utils*\n❐ ```sticker, toimg, togif, tourl, steal, emojimix, google, image```\n\n🎵 *Media*\n❐ ```yts, ytv, yta, lyrics, pinterest```\n\n💦 *NSFW*\n❐ ```spank, blowjob,lick, lesbian, pussy, cum, boobs, hentai-waifu, trap, hneko, ero, ass, hentai, milf, oral, paizuri, ecchi, uniform, maid, marin-kitagawa, oppai, mori-calliope, feet, succubus, school```\n\n"
+ arus.sendMessage(m.chat,{video:fs.readFileSync('./src/assest/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m})
+
+
+break
 		   case 'session': {
 			   if (!isCreator) return m.reply("📍The user of this command must be the owner of the bot")
 			   const session = require(`./${sessionName}.json`)
