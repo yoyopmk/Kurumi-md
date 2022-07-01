@@ -49,6 +49,10 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Eximinati/Kurumi-md)
 
+```bash
+>after deploying to heroku go to resources click on add ons and search "heroku postgres" and submit order then restart dynos
+```
+
 ## Clone this project
 ```bash
 > git clone https://github.com/Eximinati/Kurumi-md
