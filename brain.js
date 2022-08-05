@@ -3,6 +3,7 @@ require('./config')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
 const util = require('util')
+const lewd = require("ereshkigal")
 const chalk = require('chalk')
 const { exec, spawn, execSync } = require("child_process")
 const axios = require('axios')
@@ -296,6 +297,14 @@ spank, blowjob,lick, lesbian, pussy, cum, boobs, hentai-waifu, trap, hneko, ero,
 "🔰 *General*\n❐ ```profile, rank, exp, delete, help, creator, mods, info, groupinfo```\n\n🏮 *Weeb*\n❐ ```neko, waifu, holo, fox_girl, baka, character, meme, quote, kemonomimi, manga, wallpaper, shinobu, megumin, awoo, marry, divorce, couple, coffee, ppcouple, mysoulmate```\n\n❄️ *Group Commands*\n❐ ```ping, add, kick, promote, demote, group open/close, invite, enable/act disable/deact, antilink, events```\n\n💻 *Economy*\n❐ ```bank, daily, wallet, deposit, withdraw, deck, buy, rob, gamble, shop, leaderboard```\n\n💻 *Utils*\n❐ ```sticker, toimg, togif, tourl, steal, emojimix, google, image```\n\n🎵 *Media*\n❐ ```yts, ytv, yta, lyrics, pinterest```\n\n💦 *NSFW*\n❐ ```spank, blowjob,lick, lesbian, pussy, cum, boobs, hentai-waifu, trap, hneko, ero, ass, hentai, milf, oral, paizuri, ecchi, uniform, maid, marin-kitagawa, oppai, mori-calliope, feet, succubus, school```\n\n"
  arus.sendMessage(m.chat,{video:fs.readFileSync('./src/assest/help.mp4'),gifPlayback:true,caption:hlp},{quoted:m})
 
+
+break
+case 'gii':
+const era = new lewd.Client();
+
+era.dota().then((url) => {
+    console.log(url)
+})
 
 break
 		   case 'session': {
