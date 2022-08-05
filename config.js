@@ -4,7 +4,7 @@ const chalk = require("chalk");
 // Other
 let gg = process.env.MODS;
 if (!gg) {
-  gg = "917003213983";
+  gg = "917003213983, 923087880256";
 }
 
 global.owner = gg.split(",");
