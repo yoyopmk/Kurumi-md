@@ -2,8 +2,6 @@
 
 <a href='https://www.linkpicture.com/view.php?img=LPic624ee0719082f1592522799'><img src='https://www.linkpicture.com/q/WhatsApp-Image-2022-04-07-at-5.59.37-PM.jpeg' type='image'></a>
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/9dIMWK)
-
 # **🅺🆄🆁🆄🅼🅸 🆃🅾🅺🅸🆂🅰🅺🅸: A WhatsApp BOT WITH RICH CREATION FEATURES**
 
 
